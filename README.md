@@ -1,2 +1,2 @@
 # PaginatorTwigExtension
-This extension helps with simple pagination in Twig templates
+Twig extension to help generate simple paginations in Twig templates.
