@@ -1,6 +1,6 @@
 <?php
 
-namespace PaginatorTwigExtension;
+namespace Morozgrafix\Twig\Extension\;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
@@ -9,6 +9,10 @@ use Twig\TwigFunction;
  * Twig extension to help generate simple paginations.
  */
 class PaginatorTwigExtension extends AbstractExtension {
+
+        public function getName(){
+                return 'paginator';
+        }
 
         public function getFunctions(){
                 return [
