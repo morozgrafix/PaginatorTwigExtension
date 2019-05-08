@@ -14,13 +14,28 @@ final class PaginatorTwigExtensionTest extends TestCase {
 	}
 
 	/**
-	 * @testdox Extension name is returned
+	 * @testdox Twig getName is returned
 	 */
-	public function testExtensionName(): void {
+	public function testGetName(): void {
 		$this->assertEquals(
 			'paginator',
 			$this->extension->getName()
 		);
+	}
+
+	/**
+	 * @testdox Twig getFunctions is returned
+	 */
+	public function testGetFunctions():void {
+		$functions = $this->extension->getFunctions();
+		$this->assertCount(1, $functions);
+		$function = reset($functions);
+		$this->assertInstanceOf('Twig_SimpleFunction', $function);
+		$callable = $function->getCallable();
+		$this->assertTrue(is_array($callable));
+		$this->assertCount(2, $callable);
+		$this->assertSame($this->extension, $callable[0]);
+		$this->assertSame('generatePaginationData', $callable[1]);
 	}
 
 	/**
