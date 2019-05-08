@@ -1,59 +1,51 @@
 <?xml version="1.0"?>
 <ruleset name="PHP_CodeSniffer">
- <description>The coding standard for PHP_CodeSniffer itself.</description>
-
- <file>src</file>
- <file>tests</file>
-
- <exclude-pattern>*/config/*</exclude-pattern>
- <exclude-pattern>*/logs/*</exclude-pattern>
- <exclude-pattern>*/vendor/*</exclude-pattern>
- <exclude-pattern>*/templates/cache/*</exclude-pattern>
- <exclude-pattern>*/js/*</exclude-pattern>
- <exclude-pattern>*/css/*</exclude-pattern>
-
- <arg name="colors"/>
- <arg value="np"/>
- <arg name="tab-width" value="4"/>
-
- <!-- Don't hide tokenizer exceptions -->
- <rule ref="Internal.Tokenizer.Exception">
-  <type>error</type>
- </rule>
-
- <!-- Include the whole PSR-1 standard -->
- <rule ref="PSR1">
-  <!-- <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/> -->
- </rule>
-
- <!-- Include the PSR-2 standard with some exclusions -->
- <rule ref="PSR2">
-  <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
-  <!-- <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed"/> -->
-  <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
-  <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
-  
-  <exclude name="Squiz.Functions.MultiLineFunctionDeclaration"/>
-  <exclude name="Squiz.ControlStructures.ControlSignature"/>
- </rule>
-
- <!-- Include some sniffs from other standards that don't conflict -->
- <rule ref="Generic.Classes.OpeningBraceSameLine"/>
- <rule ref="Generic.CodeAnalysis"/>
- <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
- <rule ref="Generic.Strings"/>
- <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
- <rule ref="Squiz.Classes.ClassFileName"/>
- <rule ref="Squiz.Classes.SelfMemberReference"/>
- <rule ref="Squiz.PHP.DiscouragedFunctions"/>
- <rule ref="Squiz.PHP.Eval"/>
- <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
- <rule ref="Squiz.PHP.NonExecutableCode"/>
- <rule ref="Squiz.Strings.DoubleQuoteUsage">
-  <!-- <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/> -->
- </rule>
- <rule ref="Squiz.WhiteSpace.ControlStructureSpacing"/>
- <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
- <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
- <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+  <description>The coding standard for PHP_CodeSniffer itself.</description>
+  <file>src</file>
+  <file>tests</file>
+  <exclude-pattern>*/config/*</exclude-pattern>
+  <exclude-pattern>*/logs/*</exclude-pattern>
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/templates/cache/*</exclude-pattern>
+  <exclude-pattern>*/js/*</exclude-pattern>
+  <exclude-pattern>*/css/*</exclude-pattern>
+  <arg name="colors"/>
+  <arg value="np"/>
+  <arg name="tab-width" value="4"/>
+  <!-- Don't hide tokenizer exceptions -->
+  <rule ref="Internal.Tokenizer.Exception">
+    <type>error</type>
+  </rule>
+  <!-- Include the whole PSR-1 standard -->
+  <rule ref="PSR1">
+    <!-- <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/> -->
+  </rule>
+  <!-- Include the PSR-2 standard with some exclusions -->
+  <rule ref="PSR2">
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+    <!-- <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed"/> -->
+    <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration"/>
+    <exclude name="Squiz.ControlStructures.ControlSignature"/>
+  </rule>
+  <!-- Include some sniffs from other standards that don't conflict -->
+  <rule ref="Generic.Classes.OpeningBraceSameLine"/>
+  <rule ref="Generic.CodeAnalysis"/>
+  <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+  <rule ref="Generic.Strings"/>
+  <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+  <rule ref="Squiz.Classes.ClassFileName"/>
+  <rule ref="Squiz.Classes.SelfMemberReference"/>
+  <rule ref="Squiz.PHP.DiscouragedFunctions"/>
+  <rule ref="Squiz.PHP.Eval"/>
+  <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+  <rule ref="Squiz.PHP.NonExecutableCode"/>
+  <rule ref="Squiz.Strings.DoubleQuoteUsage">
+    <!-- <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/> -->
+  </rule>
+  <rule ref="Squiz.WhiteSpace.ControlStructureSpacing"/>
+  <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+  <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+  <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
 </ruleset>
