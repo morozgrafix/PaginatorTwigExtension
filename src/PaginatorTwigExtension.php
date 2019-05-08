@@ -43,7 +43,7 @@ class PaginatorTwigExtension extends AbstractExtension {
 				$pagination[] = $separator;
 				$pagination[] = $last_page;
 			// if current page in the middle return first page, front separator, pagination, end separator, last page
-			} elseif(($curr_page > ($num_items - 3)) && ($curr_page < ($last_page - 3))) {
+			} elseif (($curr_page > ($num_items - 3)) && ($curr_page < ($last_page - 3))) {
 				$pagination[] = 1;
 				$pagination[] = $separator;
 				$pagination = array_merge($pagination, range($curr_page - ($num_items - 5) / 2, $curr_page + ($num_items - 5) / 2));
