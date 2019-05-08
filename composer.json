@@ -3,8 +3,8 @@
     "description": "Twig extension to help generate simple paginations in Twig templates.",
     "type": "library",
     "require": {
-        "php": ">=5.3",
-        "twig/twig": "~2.0"
+        "php": "^7.0",
+        "twig/twig": "^2.0"
     },
     "autoload": {
         "psr-4": { "Morozgrafix\\Twig\\Extension\\": "src/"}
