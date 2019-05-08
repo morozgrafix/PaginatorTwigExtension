@@ -2,6 +2,8 @@
     "name": "morozgrafix/paginator-twig-extension",
     "description": "Twig extension to help generate simple paginations in Twig templates.",
     "type": "library",
+    "keywords": ["pagination", "page", "pages", "twig"],
+    "homepage": "https://github.com/morozgrafix/PaginatorTwigExtension",
     "require": {
         "php": "^7.0",
         "twig/twig": "^2.0"
@@ -16,7 +18,9 @@
     "authors": [
         {
             "name": "Sergey Morozov",
-            "email": "morozgrafix@gmail.com"
+            "email": "morozgrafix@gmail.com",
+            "homepage": "https://morozgrafix.com",
+            "role": "Developer"
         }
     ]
 }
