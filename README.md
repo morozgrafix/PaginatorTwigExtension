@@ -14,7 +14,7 @@ Twig extension to help generate simple paginations in Twig templates.
 
 This extension helps building pagination in [Twig](https://twig.symfony.com/) templates. It will return an array with all necessary information to quickly display pagination links. It doesn't generate any HTML and it's up to you how you'd like to display it. Example below shows one of the ways of generating pagination compatible with [Bootstrap CSS framework](https://getbootstrap.com/).
 
-
+![Example1](../assets/images/example1.png?raw=true)
 
 Extension is called with following function and accepts following parameters:
 
@@ -53,6 +53,7 @@ array (
 )
 ```
 
+
 # Installation
 
 Using [Composer](http://getcomposer.org):
@@ -88,9 +89,17 @@ Following example is compatible with [Bootstrap 4](https://getbootstrap.com/) CS
 </nav>
 ```
 
-Result:
-#TODO: insert images with and without Prev/Next
 
+Result with optional `Prev`/`Next`:
+
+
+![Example2](../assets/images/example2.png?raw=true)
+
+
+Result without `Prev`/`Next`:
+
+
+![Example3](../assets/images/example3.png?raw=true)
 
 # Additional Examples
 
@@ -121,7 +130,7 @@ array (
 )
 ```
 
-#TODO: Insert image
+![Example4](../assets/images/example4.png?raw=true)
 
 Even number of items was specified, it gets bumped to next odd number for display symmetry (10 -> 11):
 ```twig
@@ -152,4 +161,8 @@ array (
 )
 ```
 
-#TODO: Insert image
+![Example5](../assets/images/example5.png?raw=true)
+
+# P.S.
+
+This is my first Twig extension and it was quickly developed while I was working on a bigger project that needed pagination. I'm sure there are some pitfalls and additional features that can be added. Feel free to open an issue or submit a PR with improvements. Thanks. 🙇
