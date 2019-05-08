@@ -1,5 +1,5 @@
 {
-    "name": "sergey/paginator-twig-extension",
+    "name": "morozgrafix/paginator-twig-extension",
     "description": "Twig extension to help generate simple paginations in Twig templates.",
     "type": "library",
     "require": {
