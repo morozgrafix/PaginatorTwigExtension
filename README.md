@@ -108,7 +108,7 @@ Custom separator:
 {% set paginator = paginator(10, 25 , 11, '¯\_(ツ)_/¯') %}
 ```
 Result:
-```
+```php
 array (
   'curr_page' => 10,
   'last_page' => 25,
